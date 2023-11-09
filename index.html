@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/planet_2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Space Age</title>
+  </head>
+  <body class="font-mono bg-gray-950 flex justify-center py-44 px-5">
+    <div class="images absolute z-[-1] w-full h-full top-0 left-0">
+      <img
+        src="/images/planet_1.svg"
+        alt=""
+        class="w-24 absolute top-[17%] left-[18%] animate-[spin_15s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_2.svg"
+        alt=""
+        class="w-24 absolute top-[87%] left-[10%] animate-[spin_71s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_3.svg"
+        alt=""
+        class="w-24 absolute top-[0] left-[0] animate-[spin_23s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_4.svg"
+        alt=""
+        class="w-24 absolute top-[50%] left-[68%] animate-[spin_18s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_5.svg"
+        alt=""
+        class="w-24 absolute top-[56%] left-[22%] animate-[spin_10s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_6.svg"
+        alt=""
+        class="w-24 absolute top-[80%] left-[82%] animate-[spin_48s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_7.svg"
+        alt=""
+        class="w-24 absolute top-[82%] left-[50%] animate-[spin_28s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_8.svg"
+        alt=""
+        class="w-24 absolute top-[44%] left-[6%] animate-[spin_50s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_9.svg"
+        alt=""
+        class="w-24 absolute top-[7%] left-[35%] animate-[spin_32s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_10.svg"
+        alt=""
+        class="w-24 absolute top-[37%] left-[85%] animate-[spin_56s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_11.svg"
+        alt=""
+        class="w-24 absolute top-[5%] left-[90%] animate-[spin_90s_linear_infinite]"
+      />
+      <img
+        src="/images/planet_12.svg"
+        alt=""
+        class="w-24 absolute top-[5%] left-[67%] animate-[spin_61s_linear_infinite]"
+      />
+    </div>
+
+    <div
+      class="calculator bg-gray-900 text-white max-w-xl p-10 text-center rounded relative"
+    >
+      <h2 class="text-2xl max-w-md mx-auto mb-10">
+        Calculate how old are you based on the planet of birth
+      </h2>
+      <div class="mb-10">
+        <label for="date" class="text-lg">Birth Date:</label>
+        <input
+          id="date"
+          type="date"
+          class="rounded text-lg p-2 inline-block bg-slate-600 outline-none"
+        />
+        <span class="date-error block mt-2 text-red-400 text-sm hidden"
+          >Choose date</span
+        >
+      </div>
+      <div class="mb-12">
+        <label for="planet" class="block text-lg"
+          >Choose planet of birth:</label
+        >
+        <select
+          name="planets"
+          id="planet"
+          class="block mx-auto text-lg p-2 bg-slate-600 rounded mt-3 cursor-pointer"
+        ></select>
+        <span class="planet-error inline-block mt-2 text-red-400 text-sm hidden"
+          >Choose planet</span
+        >
+      </div>
+      <button
+        class="btn-calculate block bg-teal-500 text-white rounded py-2 px-3 font-bold mx-auto text-xl hover:bg-teal-600 transition-colors"
+      >
+        Calculate Age
+      </button>
+      <div
+        class="result absolute w-full left-0 bottom-0 bg-gray-800 rounded py-5 px-3 transition-transform z-[-1]"
+      ></div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
